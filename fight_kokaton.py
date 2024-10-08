@@ -149,9 +149,9 @@ class Score:
         """
         スコア表示
         """
-        self.fonto = pg.font.SysFont("hgp創英角ﾎﾟｯﾌﾟ体", 30)
+        self.fonto = pg.font.SysFont("hgp創英角ﾎﾟｯﾌﾟ体", 30) #字の形指定
         self.score = 0
-        self.img = self.fonto.render(f"スコア:{self.score}", 0, (0,0,255))
+        self.img = self.fonto.render(f"スコア:{self.score}", 0, (0,0,255)) #文字列Surfaceの生成
 
     def update(self, screen):
          """
@@ -160,8 +160,6 @@ class Score:
          """
          self.img = self.fonto.render(f"スコア:{self.score}", 0, (0,0,255))
          screen.blit(self.img, [100,HEIGHT-50])
-
-        
 
 
 def main():
